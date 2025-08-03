@@ -2,48 +2,224 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Products | Choco-Wala</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choco-Wala - Premium Chocolates</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <style>
-    body { font-family: 'Montserrat', sans-serif; background: #fff8f0; margin: 0; padding: 0; color: #333; }
-    header, footer { background-color: #4e342e; color: white; padding: 1rem; text-align: center; }
-    nav { background-color: #3e2723; padding: 1rem; text-align: center; }
-    nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; }
-    nav a:hover { color: #ffc107; }
-    .container { padding: 2rem; max-width: 1000px; margin: auto; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
-    .card { background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1rem; text-align: center; }
-    .card img { max-width: 100%; border-radius: 10px; }
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .hero {
+      background-color: #5c3d2e;
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .product-card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+    .btn-buy, .btn-whatsapp {
+      margin-right: 5px;
+    }
+    .category {
+      margin-top: 60px;
+    }
   </style>
 </head>
 <body>
-  <header><h1>Our Products</h1></header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <div class="container">
-    <div class="grid">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1606312617287-15253fd2dbee" alt="Choco Delight" />
-        <h3>Choco Delight</h3>
-        <p>₹120 | Dark Chocolate + Almond</p>
+  <div class="hero">
+    <h1>Choco-Wala</h1>
+    <p>Taste the Feeling, Bite the Love</p>
+  </div>
+
+  <div class="container py-5">
+    <h2 class="text-center mb-4">Our Bestsellers</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card product-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Choco-Wala Premium Dark</h5>
+            <p class="card-text">Luxury dark chocolate with 70% cocoa</p>
+            <a href="#" class="btn btn-primary btn-buy">Buy Now</a>
+            <a href="https://wa.me/?text=I%20want%20to%20order%20Choco-Wala%20Premium%20Dark" class="btn btn-success btn-whatsapp">Order on WhatsApp</a>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1612197582390-8f6d7cc5c9b9" alt="Strawberry Cream" />
-        <h3>Strawberry Cream</h3>
-        <p>₹140 | White Chocolate + Strawberry Filling</p>
+      <div class="col">
+        <div class="card product-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Choco-Wala Strawberry Love</h5>
+            <p class="card-text">Creamy strawberry-filled heart-shaped choco</p>
+            <a href="#" class="btn btn-primary btn-buy">Buy Now</a>
+            <a href="https://wa.me/?text=I%20want%20to%20order%20Choco-Wala%20Strawberry%20Love" class="btn btn-success btn-whatsapp">Order on WhatsApp</a>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1598899134739-24c46f58d940" alt="Nutty Love" />
-        <h3>Nutty Love</h3>
-        <p>₹150 | Milk Chocolate + Nuts</p>
+      <div class="col">
+        <div class="card product-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Choco-Wala Nut Lover</h5>
+            <p class="card-text">Loaded with cashews, almonds, and hazelnuts</p>
+            <a href="#" class="btn btn-primary btn-buy">Buy Now</a>
+            <a href="https://wa.me/?text=I%20want%20to%20order%20Choco-Wala%20Nut%20Lover" class="btn btn-success btn-whatsapp">Order on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card product-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Choco-Wala Caramel Dream</h5>
+            <p class="card-text">Golden chocolate with rich caramel inside</p>
+            <a href="#" class="btn btn-primary btn-buy">Buy Now</a>
+            <a href="https://wa.me/?text=I%20want%20to%20order%20Choco-Wala%20Caramel%20Dream" class="btn btn-success btn-whatsapp">Order on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card product-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Choco-Wala Classic Bar</h5>
+            <p class="card-text">Rich milk chocolate in signature Choco-Wala style</p>
+            <a href="#" class="btn btn-primary btn-buy">Buy Now</a>
+            <a href="https://wa.me/?text=I%20want%20to%20order%20Choco-Wala%20Classic%20Bar" class="btn btn-success btn-whatsapp">Order on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card product-card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Choco-Wala Coconut Crunch</h5>
+            <p class="card-text">White choco filled with crunchy coconut flakes</p>
+            <a href="#" class="btn btn-primary btn-buy">Buy Now</a>
+            <a href="https://wa.me/?text=I%20want%20to%20order%20Choco-Wala%20Coconut%20Crunch" class="btn btn-success btn-whatsapp">Order on WhatsApp</a>
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="category">
+      <h2 class="text-center mt-5">Indian Festival Special</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card product-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Diwali Delight</h5>
+              <p class="card-text">Dry fruit rich dark chocolate for the festival of lights</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+              <a href="https://wa.me/?text=I%20want%20to%20order%20Diwali%20Delight" class="btn btn-success">Order on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Holi Splash</h5>
+              <p class="card-text">Colorful fruit flavored chocolate bites for Holi fun</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+              <a href="https://wa.me/?text=I%20want%20to%20order%20Holi%20Splash" class="btn btn-success">Order on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Raksha Bandhan Ribbon</h5>
+              <p class="card-text">Special gift box for brothers and sisters</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+              <a href="https://wa.me/?text=I%20want%20to%20order%20Raksha%20Bandhan%20Ribbon" class="btn btn-success">Order on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2 class="text-center mt-5">Kids' Special Collection</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card product-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Milky Dino</h5>
+              <p class="card-text">Dinosaur-shaped white chocolate for kids</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+              <a href="https://wa.me/?text=I%20want%20to%20order%20Milky%20Dino" class="btn btn-success">Order on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Rainbow Lolly</h5>
+              <p class="card-text">Colorful lollipop-style chocolate with fruit layers</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+              <a href="https://wa.me/?text=I%20want%20to%20order%20Rainbow%20Lolly" class="btn btn-success">Order on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Crunchy Panda</h5>
+              <p class="card-text">Panda-faced milk choco with popping candy</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+              <a href="https://wa.me/?text=I%20want%20to%20order%20Crunchy%20Panda" class="btn btn-success">Order on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2 class="text-center mt-5">Couple Special Moments</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card product-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">First Crush Choco</h5>
+              <p class="card-text">Sweet and tangy chocolate to relive the first crush</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+              <a href="https://wa.me/?text=I%20want%20to%20order%20First%20Crush%20Choco" class="btn btn-success">Order on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">First Kiss Melt</h5>
+              <p class="card-text">Velvety soft melt-in-mouth chocolate for intimate memories</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+              <a href="https://wa.me/?text=I%20want%20to%20order%20First%20Kiss%20Melt" class="btn btn-success">Order on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card product-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Miss You Bite</h5>
+              <p class="card-text">Dark bittersweet chocolate for the moments you miss each other</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+              <a href="https://wa.me/?text=I%20want%20to%20order%20Miss%20You%20Bite" class="btn btn-success">Order on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
-  <footer><p>&copy; 2025 Choco-Wala</p></footer>
+
 </body>
 </html>
