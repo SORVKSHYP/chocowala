@@ -4,47 +4,146 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Choco-Wala | Taste the Feeling, Bite the Love</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: sans-serif; margin: 0; padding: 0; background: #fff8f0; color: #4d2c1a; }
-    header { background: #3e2723; color: white; padding: 20px; text-align: center; }
-    section { padding: 20px; max-width: 800px; margin: auto; }
-    .products { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
-    .product { background: #fff; border: 1px solid #ccc; padding: 10px; width: 200px; border-radius: 8px; }
-    footer { background: #3e2723; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background-color: #fff8f0;
+      color: #3a2c2c;
+    }
+    header {
+      background: linear-gradient(to right, #4e342e, #6d4c41);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #3e2723;
+      padding: 1rem;
+    }
+    nav a {
+      color: #ffffffcc;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffc107;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 2rem;
+      background-image: url('https://images.unsplash.com/photo-1593806871673-e5e0dc2c1834');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      text-align: center;
+    }
+    .section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .product-card {
+      background: white;
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 1rem;
+    }
+    .product-card h3 {
+      margin-top: 0.5rem;
+    }
+    footer {
+      background: #3e2723;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+    footer a {
+      color: #ffc107;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>🍫 Choco-Wala</h1>
-    <p><em>"Taste the Feeling, Bite the Love"</em></p>
+    <h1>Choco-Wala</h1>
+    <p>Taste the Feeling, Bite the Love</p>
   </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-  <section>
-    <h2>About Us</h2>
-    <p>Choco-Wala is a luxury chocolate brand created with love in every bite.</p>
-  </section>
+  <div class="hero">
+    <h1>Luxury Handmade Chocolates</h1>
+    <p>Made with passion, purity, and premium ingredients. Experience the taste of love in every bite.</p>
+  </div>
 
-  <section>
-    <h2>Our Products</h2>
+  <section class="section">
+    <h2>Our Bestsellers</h2>
     <div class="products">
-      <div class="product">
-        <h3>Dark Chocolate</h3>
-        <p>Rich and pure, made from 70% cocoa.</p>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1606312617287-15253fd2dbee" alt="Choco Delight">
+        <h3>Choco Delight</h3>
+        <p>Pure dark chocolate with almond chunks.</p>
       </div>
-      <div class="product">
-        <h3>Milk Delight</h3>
-        <p>Creamy milk chocolate that melts your heart.</p>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1612197582390-8f6d7cc5c9b9" alt="Strawberry Cream">
+        <h3>Strawberry Cream</h3>
+        <p>Strawberry filled white chocolate bar.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1598899134739-24c46f58d940" alt="Nutty Love">
+        <h3>Nutty Love</h3>
+        <p>Milk chocolate with roasted nuts.</p>
       </div>
     </div>
   </section>
 
-  <section>
-    <h2>Contact Us</h2>
-    <p>Email: contact@choco-wala.in</p>
-  </section>
-
   <footer>
-    <p>© 2025 Choco-Wala | All Rights Reserved</p>
+    <p>&copy; 2025 Choco-Wala. Made with ❤️ by Saurabh</p>
+    <p><a href="mailto:contact@choco-wala.com">contact@choco-wala.com</a></p>
   </footer>
 </body>
 </html>
