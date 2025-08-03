@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products | Choco-Wala</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', sans-serif; background: #fff8f0; margin: 0; padding: 0; color: #333; }
+    header, footer { background-color: #4e342e; color: white; padding: 1rem; text-align: center; }
+    nav { background-color: #3e2723; padding: 1rem; text-align: center; }
+    nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #ffc107; }
+    .container { padding: 2rem; max-width: 1000px; margin: auto; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    .card { background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 1rem; text-align: center; }
+    .card img { max-width: 100%; border-radius: 10px; }
+  </style>
+</head>
+<body>
+  <header><h1>Our Products</h1></header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606312617287-15253fd2dbee" alt="Choco Delight" />
+        <h3>Choco Delight</h3>
+        <p>₹120 | Dark Chocolate + Almond</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1612197582390-8f6d7cc5c9b9" alt="Strawberry Cream" />
+        <h3>Strawberry Cream</h3>
+        <p>₹140 | White Chocolate + Strawberry Filling</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1598899134739-24c46f58d940" alt="Nutty Love" />
+        <h3>Nutty Love</h3>
+        <p>₹150 | Milk Chocolate + Nuts</p>
+      </div>
+    </div>
+  </div>
+  <footer><p>&copy; 2025 Choco-Wala</p></footer>
+</body>
+</html>
